@@ -1,18 +1,53 @@
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  color: #2e2f42;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
 }
 
 a:hover {
   color: #404bbf;
 }
 
+.logo {
+  font-family: 'Railway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  text-transform: uppercase;
+}
+
+.logo-span {
+  color: #2e2f42;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
 .nav-link:hover {
   color: #404bbf;
 }
 
+.contacts {
+  font-style: normal;
+}
+
+.contacts-item,
+.contacts-item {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 .contacts-item:hover,
 .contacts-item:focus {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #404bbf;
 }
 
@@ -21,13 +56,38 @@ a:hover {
 }
 
 .solutions-title {
-  font-size: 56;
-  line-height: 6;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.solutions-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+}
+
+.solutions-button:focus {
+  background-color: #404bbf;
 }
 
 .advantages-item-title {
-  font-size: 20;
-  line-height: 2.4;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.advantages-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .team {
@@ -36,33 +96,61 @@ a:hover {
 
 .team-title {
   font-size: 36px;
-  line-height: 4;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team-item {
+  background-color: #ffffff;
 }
 
 .team-item-title {
-  font-size: 20;
-  line-height: 2.4;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.team-item-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #434455;
 }
 
 .portfolio-title {
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   font-size: 36px;
   line-height: 4;
 }
 
 .portfolio-item-title {
-  font-size: 20;
-  line-height: 2.4;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
-.solutions-button {
-  background-color: #4d5ae5;
-  cursor: pointer;
+.portfolio-item-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #434455;
 }
 
 .solutions-button:hover {
   background-color: #404bbf;
 }
 
-footer {
+.footer {
   background-color: #2e2f42;
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
 }
