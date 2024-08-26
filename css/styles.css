@@ -8,7 +8,7 @@ a:hover {
   color: #404bbf;
 }
 
-.logo {
+.header-logo {
   font-size: 18px;
   color: #4d5ae5;
   font-weight: 700;
@@ -18,8 +18,8 @@ a:hover {
   font-family: 'Raleway', sans-serif;
 }
 
-.logo-span {
-  color: #f4f4fd;
+.header-logo .logo-span {
+  color: #2e2f42;
 }
 
 .nav-link {
@@ -45,7 +45,7 @@ a:hover {
 }
 
 .contacts-item:hover,
-.contacts-item:active {
+.contacts-item:focus {
   color: #404bbf;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -152,6 +152,20 @@ a:hover {
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-logo {
+  font-size: 18px;
+  color: #4d5ae5;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-logo .logo-span {
+  color: #f4f4fd;
 }
 
 .footer-text {
