@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: #2e2f42;
+}
+
+a:hover {
+  color: #404bbf;
+}
+
+.nav-link:hover {
+  color: #404bbf;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #404bbf;
+}
+
+.solutions {
+  background-color: #2e2f42;
+}
+
+.solutions-title {
+  font-size: 56;
+  line-height: 6;
+}
+
+.advantages-item-title {
+  font-size: 20;
+  line-height: 2.4;
+}
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 4;
+}
+
+.team-item-title {
+  font-size: 20;
+  line-height: 2.4;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  line-height: 4;
+}
+
+.portfolio-item-title {
+  font-size: 20;
+  line-height: 2.4;
+}
+
+.solutions-button {
+  background-color: #4d5ae5;
+  cursor: pointer;
+}
+
+.solutions-button:hover {
+  background-color: #404bbf;
+}
+
+footer {
+  background-color: #2e2f42;
+}
