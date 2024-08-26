@@ -38,14 +38,14 @@ a:hover {
   font-style: normal;
 }
 
-.contacts-item {
+.contacts-link {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
   line-height: 1.5;
   letter-spacing: 0.02em;
