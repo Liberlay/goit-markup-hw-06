@@ -4,8 +4,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: #404bbf;
+}
+
+ul {
+  list-style: none;
 }
 
 .header-logo {
