@@ -39,8 +39,7 @@ header {
 
 header .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
   padding: 0 15px;
   width: 1158px;
 }
@@ -49,7 +48,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 76px;
-  padding-left: 156px;
 }
 
 nav .list {
@@ -146,12 +144,16 @@ header .link {
   background-color: #404bbf;
 }
 
-.advantages .container {
+.advantages {
   padding: 120px 0;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .advantages .list {
@@ -184,13 +186,8 @@ header .link {
 
 .team {
   height: 732px;
-  background-color: #f4f4fd;
-}
-
-.team .container {
-  gap: 72px;
   padding: 120px 0;
-  height: 100%;
+  background-color: #f4f4fd;
 }
 
 .team .title {
@@ -240,8 +237,8 @@ header .link {
   letter-spacing: 0.02em;
 }
 
-.portfolio .container {
-  padding: 120px 156px;
+.portfolio {
+  padding: 120px 0 120px 0;
 }
 
 .portfolio .title {
@@ -289,12 +286,8 @@ header .link {
 }
 
 .footer {
-  background-color: #2e2f42;
-}
-
-.footer .container {
   padding: 100px 0;
-  padding-left: 156px;
+  background-color: #2e2f42;
 }
 
 .footer .logo {
