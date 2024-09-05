@@ -170,8 +170,6 @@ header .link {
 }
 
 .advantages .item {
-  display: flex;
-  flex-direction: column;
   width: calc((100% - 72px) / 4);
 }
 
@@ -192,9 +190,15 @@ header .link {
 }
 
 .team {
-  height: 732px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 120px 0;
   background-color: #f4f4fd;
+}
+
+.team .container {
+  width: 1128px;
 }
 
 .team .title {
@@ -214,7 +218,7 @@ header .link {
 }
 
 .team .item {
-  max-width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
 }
@@ -245,7 +249,14 @@ header .link {
 }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 120px 0 120px 0;
+}
+
+.portfolio .container {
+  width: 1128px;
 }
 
 .portfolio .title {
@@ -268,7 +279,7 @@ header .link {
 }
 
 .portfolio .item {
-  max-width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio .item-bottom {
