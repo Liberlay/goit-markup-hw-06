@@ -16,6 +16,7 @@ p {
 
 a {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover,
@@ -76,11 +77,27 @@ header .logo .span {
 }
 
 header .link {
+  position: relative;
   padding: 24px 0;
   color: #2e2f42;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+header .link:hover {
+  color: #404bbf;
+}
+
+header .nav .item:first-child .link::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .contacts {
@@ -108,7 +125,9 @@ header .link {
 
 .solutions {
   padding: 188px 0;
+  max-width: 1440px;
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
 }
 
 .solutions .container {
@@ -139,6 +158,7 @@ header .link {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solutions .button:hover,
@@ -173,6 +193,23 @@ header .link {
 
 .advantages .item {
   width: calc((100% - 72px) / 4);
+}
+
+.advantages .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 112px;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+}
+
+.advantages .icon {
+  width: 64px;
+  height: 64px;
 }
 
 .advantages .item-title {
@@ -219,6 +256,12 @@ header .link {
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team .item:hover {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team .item-bottom {
@@ -244,6 +287,31 @@ header .link {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.team .icons {
+  display: flex;
+  gap: 24px;
+}
+
+.team .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team .icon-container:hover {
+  background-color: #404bbf;
+}
+
+.team .icon {
+  width: 16px;
+  height: 16px;
 }
 
 .portfolio {
@@ -274,6 +342,37 @@ header .link {
 
 .portfolio .item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .item:hover {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio .item-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .item:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio .overlay-content {
+  padding: 40px 32px;
+  color: #ffffff;
 }
 
 .portfolio .item-bottom {
@@ -303,6 +402,11 @@ header .link {
   background-color: #2e2f42;
 }
 
+.footer .container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -324,4 +428,39 @@ header .link {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer .socials .title {
+  color: #ffffff;
+}
+
+.footer .icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .icon-container:hover {
+  background-color: #31d0aa;
+}
+
+.footer .icon {
+  width: 24px;
+  height: 24px;
 }
