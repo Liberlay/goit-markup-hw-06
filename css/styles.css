@@ -86,9 +86,9 @@ header .link {
   letter-spacing: 0.02em;
 }
 
-header .link:hover,
-header .link:focus,
-header .link:first-child {
+header .nav .link:hover,
+header .nav .link:focus,
+header .nav .item:first-child .link {
   color: #404bbf;
 }
 
