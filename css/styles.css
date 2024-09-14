@@ -127,6 +127,7 @@ header .nav .item:first-child .link::after {
 }
 
 .solutions {
+  margin: 0 auto;
   padding: 188px 0;
   max-width: 1440px;
   background-color: #2e2f42;
