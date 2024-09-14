@@ -296,7 +296,7 @@ header .nav .item:first-child .link::after {
   gap: 24px;
 }
 
-.team .item {
+.team .icons .item {
   box-shadow: none;
 }
 
