@@ -43,10 +43,6 @@ button {
   border: none;
 }
 
-textarea {
-  outline: none;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -675,6 +671,7 @@ header .nav .item:first-child .link::after {
   resize: none;
   padding: 8px 16px;
   height: 120px;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -697,6 +694,7 @@ header .nav .item:first-child .link::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -705,7 +703,7 @@ header .nav .item:first-child .link::after {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .checkbox:checked {
+.modal input:checked + label > span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
