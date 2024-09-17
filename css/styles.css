@@ -467,7 +467,7 @@ header .nav .item:first-child .link::after {
 }
 
 .modal .close-container:hover .close-icon {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .modal .title {
