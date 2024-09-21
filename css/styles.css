@@ -26,6 +26,7 @@ a:focus {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 ul {
@@ -47,7 +48,7 @@ button {
 }
 
 .header {
-  padding: 16px 0;
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -61,7 +62,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .header .logo {
@@ -84,7 +84,7 @@ button {
 
 .header .link {
   position: relative;
-  padding: 24px 0;
+  padding: 20px 0;
   color: #2e2f42;
   line-height: 1.5;
   font-weight: 500;
@@ -136,7 +136,6 @@ button {
   margin: 0 auto;
   padding: 72px 0;
   min-width: 320px;
-  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
   background-repeat: no-repeat;
@@ -612,6 +611,7 @@ button {
 }
 
 .mobile-menu .contacts {
+  font-style: normal;
   margin-bottom: 48px;
 }
 
@@ -680,7 +680,7 @@ button {
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
   width: 288px;
-  min-height: 584px;
+  min-height: 623 px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -882,6 +882,10 @@ button {
     gap: 12px;
   }
 
+  .header .contacts .link {
+    font-size: 12px;
+  }
+
   .solutions .container {
     gap: 36px;
   }
@@ -936,10 +940,11 @@ button {
 
   .modal {
     min-width: 408px;
+    min-height: 584px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1158px) {
   .container {
     width: 1158px;
   }
@@ -950,6 +955,11 @@ button {
 
   .header .contacts .list {
     flex-direction: row;
+    gap: 40px;
+  }
+
+  .header .contacts .link {
+    font-size: 16px;
   }
 
   .solutions .container {
@@ -1007,5 +1017,12 @@ button {
 
   .footer .form {
     flex-wrap: nowrap;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/people-office-2x.png');
   }
 }
